@@ -1,0 +1,115 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 200px;
+    height: 60px;
+    background-color: #FFE7C7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.menu {
+    display: none;
+}
+
+.navbarLeft img {
+    cursor: pointer;
+}
+
+.navbarRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbarRight-link {
+    text-decoration: none;
+}
+
+.navbarRight-one p {
+    color: black;
+    transition: transform 0.1s ease;
+}
+
+.navbarRight-one p:hover {
+    transform: scale(1.08);
+}
+
+.navbarRight-one {
+    display: flex;
+    gap: 30px;
+}
+
+.navbarRight-two {}
+
+.cart {
+    font-size: 20px;
+    padding: 4px 3px 0px 3px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #5E9400;
+}
+
+.cart-icon {
+    color: #5E9400;
+}
+
+.navbarRight-two div {
+    width: 17px;
+    height: 17px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+    position: relative;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.cartNumber {
+    position: absolute;
+    top: -20px;
+    left: 12px;
+    background-color: #CC0000;
+    color: white;
+    border-radius: 50%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        gap: 45px;
+    }
+
+    .menu {
+        display: block;
+        font-size: 30px;
+        margin-top: 8px;
+    }
+
+    .navbarRight-one {
+        display: none;
+    }
+
+    .navbarRight-two {
+        position: relative;
+        left: 45px;
+    }
+
+    .cartNumber {
+        padding-top: 2px;
+    }
+}

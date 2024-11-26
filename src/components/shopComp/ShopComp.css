@@ -1,0 +1,43 @@
+.shopComp-container {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+}
+
+.shopComp {
+    /* background-color: #1d2951; */
+    background-color: #151515;
+    margin-top: 60px;
+    padding: 5px 20px;
+    border-radius: 2px;
+    border: 1px solid white;
+    transition: transform 0.2s ease;
+}
+
+.shopComp:hover {
+    transform: scale(1.03);
+}
+
+/* Responsive design */
+@media(max-width: 768px) {
+    .shopComp-container {
+        gap: 10px;
+    }
+}
+
+@media(max-width: 480px) {
+    .shopComp-container {
+        gap: 0px;
+    }
+
+    .shopComp {
+        /* background-color: #2b3f80; */
+        background-color: #252525;
+
+        padding: 5px 30px;
+    }
+}

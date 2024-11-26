@@ -1,0 +1,230 @@
+.animation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.animationLeft,
+.animationRight {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 58%;
+    transform: translateY(-50%);
+}
+
+.animationLeft img,
+.animationRight img {
+    width: 80px;
+    margin: 10px;
+    border-radius: 4px;
+}
+
+.animationLeft .centerImg {
+    margin-bottom: 75px;
+}
+
+.animationRight .centerImg {
+    margin-bottom: 75px;
+}
+
+.animationRight img {
+    border: 1px solid black;
+}
+
+.animationLeft {
+    left: -50%;
+    animation: moveLeftToCenter 1.5s forwards ease-out;
+}
+
+.animationRight {
+    right: -50%;
+    animation: moveRightToCenter 1.5s forwards ease-out;
+}
+
+@keyframes moveLeftToCenter {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: 42.1%;
+    }
+}
+
+@keyframes moveRightToCenter {
+    0% {
+        right: 0%;
+    }
+
+    100% {
+        right: 42.1%;
+    }
+}
+
+/* Animation for the first two images coming from the top left */
+.moveTopLeft {
+    animation: moveTopLeftToCenter 1.5s forwards ease-out;
+}
+
+@keyframes moveTopLeftToCenter {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+/* Animation for the last two images coming from the bottom left */
+.moveBottomLeft {
+    animation: moveBottomLeftToCenter 1.5s forwards ease-out;
+}
+
+@keyframes moveBottomLeftToCenter {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-80%);
+    }
+}
+
+/* Animation for the first two images coming from the top right */
+.moveTopRight {
+    animation: moveTopRightToCenter 1.5s forwards ease-out;
+}
+
+@keyframes moveTopRightToCenter {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+/* Animation for the last two images coming from the bottom right */
+.moveBottomRight {
+    animation: moveBottomRightToCenter 1.5s forwards ease-out;
+}
+
+@keyframes moveBottomRightToCenter {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-80%);
+    }
+}
+
+/* Shared animations for both sides' central images (do nothing for these images) */
+.centerImg {
+    transform: translateY(0);
+}
+
+/* Style for centerText className */
+.centerText {
+    position: absolute;
+    top: -15px;
+    text-align: center;
+    width: 95%;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(35, 35, 35);
+    z-index: 10;
+}
+
+/* Style for logoAnimation className */
+.logoAnimation {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+
+    .animationLeft,
+    .animationRight {
+        top: 55%;
+    }
+
+    @keyframes moveLeftToCenter {
+        0% {
+            left: 0%;
+        }
+
+        100% {
+            left: 35%;
+        }
+    }
+
+    @keyframes moveRightToCenter {
+        0% {
+            right: 0%;
+        }
+
+        100% {
+            right: 35%;
+        }
+    }
+
+    .centerText {
+        top: -12px;
+        width: 90%;
+        left: 5%;
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .animationLeft,
+    .animationRight {
+        top: 52%;
+    }
+
+    @keyframes moveLeftToCenter {
+        0% {
+            left: 0%;
+        }
+
+        100% {
+            left: 26%;
+        }
+    }
+
+    @keyframes moveRightToCenter {
+        0% {
+            right: 0%;
+        }
+
+        100% {
+            right: 26%;
+        }
+    }
+
+    .centerText {
+        top: -10px;
+        width: 80%;
+        left: 7%;
+        font-size: 20px;
+    }
+
+    .logoAnimation {
+        height: 300px;
+        width: 350px;
+    }
+}

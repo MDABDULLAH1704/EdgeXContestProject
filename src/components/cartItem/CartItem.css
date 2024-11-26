@@ -1,0 +1,118 @@
+.cartItem-container {
+    margin-top: 80px;
+    color: white;
+}
+
+.cartItem-container h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.cartItem-container-p {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cart-items {}
+
+.cart-item-1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.cart-item-2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+
+.cart-item-2 p {
+    width: 3%;
+}
+
+.cart-item-2 .title {
+    width: 5%;
+}
+
+.cartItem-container hr {
+    width: 60%;
+    background-color: white;
+}
+
+.cartItem-container h3 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.checkOutBtn {
+    text-align: center;
+}
+
+.checkOutBtn button {
+    border: none;
+    border-radius: 3px;
+    padding: 8px 16px;
+    background-color: #CC0000;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.checkOutBtn button:hover {
+    transform: scale(1.07);
+}
+
+/* Responsive design */
+@media(max-width: 768px) {
+    .cartItem-container {
+        margin-top: 90px;
+    }
+
+    .cart-item-1 {
+        gap: 40px;
+    }
+
+    .cart-item-2 {
+        gap: 82px;
+    }
+
+    .cart-item-2 p {
+        width: 4%;
+    }
+
+    .cart-item-2 .title {
+        width: 8%;
+    }
+}
+
+@media(max-width: 480px) {
+    .cart-item-1 {
+        gap: 15px;
+    }
+
+    .cart-item-2 {
+        gap: 65px;
+    }
+
+    .cart-item-2 p {
+        width: 8%;
+    }
+
+    .cart-item-2 .title {
+        width: 12%;
+    }
+
+    .cart-item-1 .itemTotalPrice {
+        display: none;
+    }
+
+    .cart-item-2 .itemTotalPrice {
+        display: none;
+    }
+}

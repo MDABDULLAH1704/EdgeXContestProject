@@ -1,0 +1,92 @@
+.hero {
+    margin-top: 60px;
+    height: 89.3vh;
+    background-color: #1d2951;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.heroLeft {
+    width: 50%;
+    margin-bottom: 100px;
+}
+
+.heroLeft h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.heroLeft h1 span {
+    color: green;
+}
+
+.heroLeft p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 30px;
+}
+
+.heroLeft .btn1 {
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 8px 14px;
+    border: none;
+    background-color: white;
+    color: rgb(15, 15, 15);
+    cursor: pointer;
+}
+
+.heroLeft .btn1:hover {
+    background-color: #FFE7C7;
+    border-radius: 5px;
+}
+
+.heroLeft .btn2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 8px 16px;
+    border: none;
+    background-color: white;
+    color: rgb(15, 15, 15);
+    cursor: pointer;
+}
+
+.heroLeft .btn2:hover {
+    background-color: #FFE7C7;
+    border-radius: 5px;
+}
+
+.heroRight {
+    margin-bottom: 50px;
+}
+
+.heroRight img {
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .hero {
+        height: 92vh;
+    }
+
+    .heroLeft {
+        width: 100%;
+        padding: 0px 50px;
+    }
+
+    .heroRight {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .heroLeft .btn1 {
+        background-color: white;
+    }
+
+    .heroLeft .btn2 {
+        background-color: white
+    }
+}
