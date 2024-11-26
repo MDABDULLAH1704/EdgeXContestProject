@@ -11,7 +11,7 @@ const hero = () => {
     useEffect(() => {
         AOS.init({
             duration: 800,
-        });
+        }); 
     }, []);
 
     // Type Writer
