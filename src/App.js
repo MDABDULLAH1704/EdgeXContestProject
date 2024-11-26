@@ -11,7 +11,7 @@ function App() {
   return (
     <CartProvider>
       <Router>
-        <Routes>
+        <Routes> 
           <Route path='/' element={<Animation />} />
           <Route path='/home' element={<Home />} />
           <Route path='/shop' element={<Shop />} />
