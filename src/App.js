@@ -9,7 +9,7 @@ import { CartProvider } from "./context/CartContext";
 
 function App() {
   return (
-    <CartProvider>
+    <CartProvider>   
       <Router>
         <Routes> 
           <Route path='/' element={<Animation />} />
